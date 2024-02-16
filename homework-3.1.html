@@ -7,7 +7,7 @@
       content="width=device-width, 
     initial-scaller=1.0"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Flowers</title>
     <style>
       body {
@@ -139,6 +139,7 @@
     </p>
     <p>
       <img
+        alt="roses"
         src="https://gamerwall.pro/uploads/posts/2022-06/thumbs/1654260282_17-gamerwall-pro-p-rozi-rossipyu-oboi-krasivo-18.jpg"
       />
     </p>
@@ -218,7 +219,7 @@
         </p>
       </li>
 
-      <li class-toKnowMore>
+      <li>
         <a
           class="toKnowMore"
           href="https://en.wikipedia.org/wiki/Flower"
@@ -236,14 +237,34 @@
     <script>
       function buyFlowers() {
         let name = prompt("What is your name?");
+        if (!name) {
+          alert("You put nothing, a programm is closed");
+          return;
+        }
         alert(name);
 
         let last_name = prompt("What is your last name?");
+        if (!last_name) {
+          alert("You put nothing, a programm is closed");
+          return;
+        }
         alert(`${name} ${last_name}`);
 
         let email = prompt("Please, write your email adress");
+        if (!email) {
+          alert("You put nothing, a programm is closed");
+          return;
+        }
         let old = prompt("How old are you?");
+        if (!old) {
+          alert("You put nothing, a programm is closed");
+          return;
+        }
         let city = prompt("Where do you live?");
+        if (!city) {
+          alert("You put nothing, a programm is closed");
+          return;
+        }
 
         if (old < 18) {
           alert(`Sorry, ${last_name} you need growing`);
